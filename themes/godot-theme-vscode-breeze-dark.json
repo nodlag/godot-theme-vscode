@@ -9,7 +9,7 @@
     //"semanticHighlighting": false,
     "godot-theme-vscode-breeze-dark": {
         "base": [
-            "#222427", // OK black-editor // OKK
+            "#222427", // OK black-editor // OK
             "#E0E0E0", // OK white text
             "#44475A", // OK blue-grey-bar
             "#76787D", // OK
@@ -22,20 +22,16 @@
             "#F9ECA8"  // OK yellow texts
         ],
         "ansi": [
-            "#3E4246", // OKK
-            "#F092C9",
-            "#89E2FC",
-            "#F9ECA8",
-            "#B7FDE2",
-            "#EE7987",
-            "#82FBC6",
-            "#E0E0E0",
-            "#76787D",
-            "#69FF94",
-            "#FFFFA5",
-            "#D6ACFF",
-            "#FF92DF",
-            "#A4FFFF",
+            "#3E4246", // OK
+            "#F092C9", // OK
+            "#89E2FC", // OK
+            "#F9ECA8", // OK
+            "#B7FDE2", // OK
+            "#EE7987", // OK
+            "#82FBC6", // OK
+            "#E0E0E0", // OK
+            "#76787D", // OK
+            "#82FBC6", // OK
             "#FFFFFF"
         ],
         "brightOther": [
@@ -58,11 +54,11 @@
         "terminal.foreground": "#E0E0E0",
         "terminal.ansiBrightBlack": "#76787D",
         "terminal.ansiBrightRed": "#EE7987", // OK
-        "terminal.ansiBrightGreen": "#69FF94",
-        "terminal.ansiBrightYellow": "#FFFFA5",
-        "terminal.ansiBrightBlue": "#D6ACFF",
+        "terminal.ansiBrightGreen": "#82FBC6",
+        "terminal.ansiBrightYellow": "#F9ECA8",
+        "terminal.ansiBrightBlue": "#B1C8FA",
         "terminal.ansiBrightMagenta": "#EE7987", // OK
-        "terminal.ansiBrightCyan": "#A4FFFF",
+        "terminal.ansiBrightCyan": "#89E2FC",
         "terminal.ansiBrightWhite": "#FFFFFF",
         "terminal.ansiBlack": "#3E4246",
         "terminal.ansiRed": "#EE7987", // OK
