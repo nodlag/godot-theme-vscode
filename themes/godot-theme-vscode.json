@@ -104,13 +104,13 @@
         "list.inactiveSelectionBackground": "#44475A75",
         "list.warningForeground": "#D2FDEE",
         "list.errorForeground": "#EE7987",
-        "activityBar.background": "#262B33",
-        "activityBar.inactiveForeground": "#76787D",
-        "activityBar.foreground": "#E0E0E0",
+        "activityBar.background": "#262B33", // OK
+        "activityBar.inactiveForeground": "#76787D", // OK
+        "activityBar.foreground": "#E0E0E0", // OK
         "activityBar.activeBorder": "#6993C2", // OK
-        "activityBar.activeBackground": "#B7FDE210",
+        "activityBar.activeBackground": "#373D49", // OK
         "activityBarBadge.background": "#6993C2", // OK
-        "activityBarBadge.foreground": "#E0E0E0",
+        "activityBarBadge.foreground": "#E0E0E0", // OK
         "sideBar.background": "#22262D", // OK
         "sideBar.foreground": "#CDCFD2", // OK - GODOT TEXT EXPLORER FILE COLOR 
         "sideBarTitle.foreground": "#E0E0E0",
