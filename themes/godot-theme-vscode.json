@@ -77,8 +77,8 @@
         "button.secondaryBackground": "#1E2228",
         "button.secondaryForeground": "#E0E0E0",
         "button.secondaryHoverBackground": "#343746",
-        "dropdown.background": "#343746",
-        "dropdown.border": "#22262D",
+        "dropdown.background": "#262B33", // OK
+        "dropdown.border": "#262B33", // OK
         "dropdown.foreground": "#E0E0E0",
         "input.background": "#1E2228", // OK
         "input.foreground": "#E0E0E0", // OK
@@ -237,7 +237,7 @@
         "walkThrough.embeddedEditorBackground": "#373D49",
         "settings.headerForeground": "#E0E0E0",
         "settings.modifiedItemIndicator": "#D2FDEE",
-        "settings.dropdownBackground": "#ff0000",
+        "settings.dropdownBackground": "#373D49",
         "settings.dropdownForeground": "#E0E0E0",
         "settings.dropdownBorder": "#22262D",
         "settings.checkboxBackground": "#373D49",

@@ -77,8 +77,8 @@
         "button.secondaryBackground": "#222427",
         "button.secondaryForeground": "#E0E0E0",
         "button.secondaryHoverBackground": "#343746",
-        "dropdown.background": "#343746",
-        "dropdown.border": "#27292D",
+        "dropdown.background": "#2C2E32", // OK
+        "dropdown.border": "#2C2E32", // OK
         "dropdown.foreground": "#E0E0E0",
         "input.background": "#222427", // OK
         "input.foreground": "#E0E0E0", // OK
