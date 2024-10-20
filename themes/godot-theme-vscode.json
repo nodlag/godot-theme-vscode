@@ -224,6 +224,14 @@
         "titleBar.activeForeground": "#E0E0E0",
         "titleBar.inactiveBackground": "#22262D",
         "titleBar.inactiveForeground": "#76787D",
+        "commandCenter.foreground": "#CDCFD2", // OK
+        "commandCenter.activeForeground": "#E0E0E0", // OK
+        "commandCenter.background": "#262B33", // OK
+        "commandCenter.activeBackground": "#373D49", // OK
+        "commandCenter.border": "#262B33", //OK
+        "commandCenter.inactiveForeground": "#CDCFD2", // OK
+        "commandCenter.inactiveBorder": "#262B33", // OK
+        "commandCenter.activeBorder": "#373D49", // OK
         "extensionButton.prominentForeground": "#E0E0E0",
         "extensionButton.prominentBackground": "#89E2FC90",
         "extensionButton.prominentHoverBackground": "#89E2FC60",
@@ -233,7 +241,7 @@
         "walkThrough.embeddedEditorBackground": "#373D49",
         "settings.headerForeground": "#E0E0E0",
         "settings.modifiedItemIndicator": "#D2FDEE",
-        "settings.dropdownBackground": "#373D49",
+        "settings.dropdownBackground": "#ff0000",
         "settings.dropdownForeground": "#E0E0E0",
         "settings.dropdownBorder": "#22262D",
         "settings.checkboxBackground": "#373D49",
@@ -247,7 +255,7 @@
         "settings.numberInputBorder": "#22262D",
         "breadcrumb.foreground": "#72757A", // OK
         "breadcrumb.background": "#373D49", // OK
-        "breadcrumb.focusForeground": "#E0E0E0",
+        "breadcrumb.focusForeground": "#E0E0E0", // OK
         "breadcrumb.activeSelectionForeground": "#E0E0E0",
         "breadcrumbPicker.background": "#22262D",
         "listFilterWidget.background": "#343746",

@@ -224,6 +224,14 @@
         "titleBar.activeForeground": "#E0E0E0",
         "titleBar.inactiveBackground": "#27292D",
         "titleBar.inactiveForeground": "#76787D",
+        "commandCenter.foreground": "#CDCFD2", // OK
+        "commandCenter.activeForeground": "#E0E0E0", // OK
+        "commandCenter.background": "#2C2E32",
+        "commandCenter.activeBackground": "#3E4246",
+        "commandCenter.border": "#2C2E32",
+        "commandCenter.inactiveForeground": "#CDCFD2",
+        "commandCenter.inactiveBorder": "#2C2E32",
+        "commandCenter.activeBorder": "#3E4246",
         "extensionButton.prominentForeground": "#E0E0E0",
         "extensionButton.prominentBackground": "#89E2FC90",
         "extensionButton.prominentHoverBackground": "#89E2FC60",
@@ -247,7 +255,7 @@
         "settings.numberInputBorder": "#27292D",
         "breadcrumb.foreground": "#72757A", // OK
         "breadcrumb.background": "#3E4246", // OK
-        "breadcrumb.focusForeground": "#E0E0E0",
+        "breadcrumb.focusForeground": "#E0E0E0", // OK
         "breadcrumb.activeSelectionForeground": "#E0E0E0",
         "breadcrumbPicker.background": "#27292D",
         "listFilterWidget.background": "#343746",
