@@ -8,7 +8,7 @@
     "url": "https://github.com/nodlag/godot-theme-vscode.git"
   },
   "version": "1.0.0",
-  "publisher": "Javier Garrido (@nodlag)",
+  "publisher": "javier-garrido-galdon",
   "engines": {
     "vscode": "^1.50.0"
   },
