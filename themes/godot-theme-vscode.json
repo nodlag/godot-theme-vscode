@@ -1201,7 +1201,6 @@
 
                 // GDSCRIPT
                 "variable.parameter.function.language.gdscript",
-                "constant.language.gdscript",
             ],
             "settings": {
                 "foreground": "#CDCFD2",
@@ -1222,6 +1221,7 @@
                 "storage.modifier.partial.cs",
                 "entity.name.type.class.cs",
                 "storage.type.class.cs",
+                "constant.language",
                 "constant.language.null.cs",
                 "constant.language.boolean.true.cs",
                 "constant.language.boolean.false.cs",
@@ -1233,6 +1233,7 @@
                 "entity.other.inherited-class.gdscript",
                 "keyword.control.in.gdscript",
                 "variable.language.gdscript",
+                "constant.language.gdscript",
             ],
             "settings": {
                 "foreground": "#EE7987",
@@ -1361,6 +1362,8 @@
                 "entity.name.type.delegate.cs",
 
                 // GDSCRIPT
+                "variable.other.gdscript",
+                "variable.other.constant.gdscript",
                 "variable.other.property.gdscript",
             ],
             "settings": {
