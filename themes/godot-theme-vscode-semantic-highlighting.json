@@ -171,7 +171,7 @@
         "editorGutter.modifiedBackground": "#82FBC680",
         "editorGutter.addedBackground": "#89E2FC80",
         "editorGutter.deletedBackground": "#EE798780",
-        "gitDecoration.modifiedResourceForeground": "#FCEEAA",
+        "gitDecoration.modifiedResourceForeground": "#FFE1A8", // original: #FCEEAA
         "gitDecoration.deletedResourceForeground": "#FF5F84", // original: #EE7987
         "gitDecoration.untrackedResourceForeground": "#41F0C4", // original: #82FBC6
         "gitDecoration.ignoredResourceForeground": "#7C7E84", // original: #76787D
@@ -1201,7 +1201,6 @@
 
                 // GDSCRIPT
                 "variable.parameter.function.language.gdscript",
-                "constant.language.gdscript",
             ],
             "settings": {
                 "foreground": "#CDCFD2",
@@ -1222,6 +1221,7 @@
                 "storage.modifier.partial.cs",
                 "entity.name.type.class.cs",
                 "storage.type.class.cs",
+                "constant.language",
                 "constant.language.null.cs",
                 "constant.language.boolean.true.cs",
                 "constant.language.boolean.false.cs",
@@ -1233,6 +1233,7 @@
                 "entity.other.inherited-class.gdscript",
                 "keyword.control.in.gdscript",
                 "variable.language.gdscript",
+                "constant.language.gdscript",
             ],
             "settings": {
                 "foreground": "#FF5F84", // original: #EE7987
@@ -1306,7 +1307,7 @@
                 "entity.name.function.gdscript",
             ],
             "settings": {
-                "foreground": "#89E2FC",
+                "foreground": "#4EB3FB", // original: #89E2FC
                 "fontStyle": ""
             }
         },
@@ -1361,6 +1362,8 @@
                 "entity.name.type.delegate.cs",
 
                 // GDSCRIPT
+                "variable.other.gdscript",
+                "variable.other.constant.gdscript",
                 "variable.other.property.gdscript",
             ],
             "settings": {
@@ -1392,7 +1395,7 @@
                 "entity.name.function.decorator.gdscript",
             ],
             "settings": {
-                "foreground": "#F4B57D",
+                "foreground": "#FFA27A", // original: #F4B57D
                 "fontStyle": ""
             }
         },
@@ -1411,6 +1414,7 @@
 
 
                 // GDSCRIPT
+                "keyword.language.region.gdscript",
                 "keyword.preprocessor.endregion.gdscript",
                 "keyword.preprocessor.region.gdscript",
                 "punctuation.separator.hash.gdscript",
@@ -1444,11 +1448,11 @@
             "fontStyle": ""
         },
         "enum": {
-            "foreground": "#6FB0F9",
+            "foreground": "#1D9CF8", // original #6FB0F9
             "fontStyle": ""
         },
         "interface": {
-            "foreground": "#6FB0F9",
+            "foreground": "#1D9CF8", // original #6FB0F9
             "fontStyle": ""
         },
         "struct": {
@@ -1476,7 +1480,7 @@
             "fontStyle": ""
         },
         "enumMember": {
-            "foreground": "#F4B57D", 
+            "foreground": "#FFA27A", // original: #F4B57D 
             "fontStyle": ""
         },
         "decorator": {
@@ -1500,7 +1504,7 @@
             "fontStyle": ""
         },
         "label": {
-            "foreground": "#F4B57D",
+            "foreground": "#FFA27A", // original: #F4B57D
             "fontStyle": ""
         },
         "comment": {
@@ -1508,7 +1512,7 @@
             "fontStyle": ""
         },
         "string": {
-            "foreground": "#FCEEAA",
+            "foreground": "#FFE1A8", // original: #FCEEAA
             "fontStyle": ""
         },
         "keyword": {
@@ -1520,7 +1524,7 @@
             "fontStyle": ""
         },
         "regexp": {
-            "foreground": "#F4B57D",
+            "foreground": "#FFA27A", // original: #F4B57D
             "fontStyle": ""
         },
         "operator": {

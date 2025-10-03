@@ -975,7 +975,7 @@
                 "keyword.operator.negation.regexp"
             ],
             "settings": {
-                "foreground": "#f78aca"
+                "foreground": "#F78ACA" // original #F092C9
             }
         },
         {
@@ -1307,7 +1307,7 @@
                 "entity.name.function.gdscript",
             ],
             "settings": {
-                "foreground": "#4eb3fb", // original: #89E2FC
+                "foreground": "#4EB3FB", // original: #89E2FC
                 "fontStyle": ""
             }
         },
@@ -1448,11 +1448,11 @@
             "fontStyle": ""
         },
         "enum": {
-            "foreground": "#1D9CF8", // original #6fb0f9
+            "foreground": "#1D9CF8", // original #6FB0F9
             "fontStyle": ""
         },
         "interface": {
-            "foreground": "#1D9CF8", // original #6fb0f9
+            "foreground": "#1D9CF8", // original #6FB0F9
             "fontStyle": ""
         },
         "struct": {
