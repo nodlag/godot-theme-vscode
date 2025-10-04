@@ -1227,6 +1227,9 @@
                 "constant.language.boolean.true.cs",
                 "constant.language.boolean.false.cs",
                 "variable.language.this.cs",
+                "keyword.operator.expression.pattern.combinator.and.cs",
+                "keyword.operator.expression.pattern.combinator.or.cs",
+                "keyword.operator.expression.pattern.is.cs",
 
                 // GDSCRIPT
                 "constant.language.boolean.gdscript",
@@ -1235,6 +1238,8 @@
                 "keyword.control.in.gdscript",
                 "variable.language.gdscript",
                 "constant.language.gdscript",
+                "keyword.operator.wordlike.gdscript",
+                "storage.type.is.gdscript",
             ],
             "settings": {
                 "foreground": "#FF5F84", // original: #EE7987
