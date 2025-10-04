@@ -256,7 +256,7 @@
         "breadcrumbPicker.background": "#27292D",
         "listFilterWidget.background": "#343746",
         "listFilterWidget.outline": "#424450",
-        "listFilterWidget.noMatchesOutline": "#FF5F84" // original: #EE7987
+        "listFilterWidget.noMatchesOutline": "#FF5F84", // original: #EE7987
     },
     "tokenColors": [
         {
@@ -1200,8 +1200,8 @@
                 "entity.name.variable.parameter.cs",
 
                 // GDSCRIPT
+                "variable.other.constant.gdscript",
                 "variable.parameter.function.language.gdscript",
-                "constant.language.gdscript",
             ],
             "settings": {
                 "foreground": "#CDCFD2",
@@ -1435,6 +1435,18 @@
             ],
             "settings": {
                 "foreground": "#7BC066",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "YELLOW Eggnog #FCEEAA",
+            "scope": [
+                // GDSCRIPT
+                "constant.character.escape",
+                "meta.literal.nodepath.gdscript",
+            ],
+            "settings": {
+                "foreground": "#FFE1A8", // original: #FCEEAA
                 "fontStyle": ""
             }
         },
