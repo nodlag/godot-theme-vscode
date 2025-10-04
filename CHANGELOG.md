@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Added "or", "and", "is" definitions.
+
 ## 1.0.1
 
 - Updated colors.
