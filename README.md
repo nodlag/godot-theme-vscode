@@ -35,7 +35,7 @@ For GDScript Support:
 
 This theme is maintained by the following person(s):
 
-- Javier Garrido [GitHub](https://github.com/nodlag) - [Twitter/X](https://twitter.com/nodlag)
+- Javier Garrido Galdón [Portfolio](https://nodlag.github.io/)
 
 ## More screenshots
 
