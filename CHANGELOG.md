@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+- Fixed "#else" on CSharp.
+
 ## 1.0.2
 
 - Added "or", "and", "is" definitions.

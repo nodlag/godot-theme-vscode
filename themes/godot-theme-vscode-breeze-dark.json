@@ -1414,6 +1414,7 @@
                 "keyword.preprocessor.elif.cs",
                 "keyword.preprocessor.if.cs",
                 "keyword.preprocessor.region.cs",
+                "keyword.preprocessor.else.cs",
                 "punctuation.separator.hash.cs",
                 "string.unquoted.preprocessor.message.cs",
 
