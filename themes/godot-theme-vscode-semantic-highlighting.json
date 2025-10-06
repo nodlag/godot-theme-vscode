@@ -1382,7 +1382,9 @@
                 // C#
                 "comment.block.cs",
                 "comment.line.double-slash.cs",
-                "punctuation.definition.comment.cs"
+                "punctuation.definition.comment.cs",
+                "punctuation.definition.tag.cs",
+                "entity.name.tag.localname.cs",
 
                 // GDSCRIPT
             ],
