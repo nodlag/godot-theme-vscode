@@ -78,7 +78,7 @@
         "dropdown.background": "#1c1f24",
         "dropdown.border": "#1c1f24",
         "dropdown.foreground": "#e1e1e1",
-        "input.background": "#23272e",
+        "input.background": "#1c1f24",
         "input.foreground": "#e1e1e1",
         "input.border": "#2a2f37",
         "input.placeholderForeground": "#7C7E84", // original: #76787D

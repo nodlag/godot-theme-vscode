@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.4
+
+- Improved input background color.
+
 ## 1.1.3
 
 - Updated border colors.
