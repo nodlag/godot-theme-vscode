@@ -1,6 +1,6 @@
 {
     "$schema": "vscode://schemas/color-theme",
-    "name": "Godot Theme VSCode",
+    "name": "Godot Theme VSCode Breeze Dark",
     "author": "Javier Garrido Galdón",
     "maintainers": [
         "Javier Garrido Galdón <nodlag@gmail.com>"
@@ -94,7 +94,7 @@
         "list.dropBackground": "#212326",
         "list.focusBackground": "#4e5052",
         "list.highlightForeground": "#41F0C4", // original: #82FBC6
-        "list.hoverBackground": "#2f3134",
+        "list.hoverBackground": "#4e5052",
         "list.hoverForeground": "#e1e1e1",
         "list.inactiveSelectionBackground": "#4e5052",
         "list.warningForeground": "#B1FAEC", // original: #D2FDEE

@@ -8,8 +8,8 @@ Powerful color themes to focus on creating the best games
 - Supports GDScript with [godot-tools](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools)
 - Supports a lot of programing languages
 
-4 Themes included:
-- 2 Modern Theme colors (Based in 4.6+)
+5 Themes included:
+- 3 Modern Theme colors (Based in 4.6+)
 - 2 Legacy Theme colors
 
 ![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshot-godot-theme-vscode-gdscript.png)

@@ -29,6 +29,11 @@
         "path": "./themes/godot-theme-vscode-breeze-dark.json"
       },
       {
+        "label": "(Modern) Godot Theme VSCode Godot 3",
+        "uiTheme": "vs-dark",
+        "path": "./themes/godot-theme-vscode-godot-3.json"
+      },
+      {
         "label": "Godot Theme VSCode",
         "uiTheme": "vs-dark",
         "path": "./themes/legacy-godot-theme-vscode.json"
