@@ -19,19 +19,24 @@
   "contributes": {
     "themes": [
       {
-        "label": "Godot Theme VSCode",
+        "label": "(Modern) Godot Theme VSCode",
         "uiTheme": "vs-dark",
         "path": "./themes/godot-theme-vscode.json"
       },
       {
-        "label": "Godot Theme VSCode (Legacy)",
+        "label": "(Modern) Godot Theme VSCode Breeze Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/godot-theme-vscode-legacy.json"
+        "path": "./themes/godot-theme-vscode-breeze-dark.json"
       },
       {
-        "label": "Godot Theme VSCode Breeze Dark (Legacy)",
+        "label": "Godot Theme VSCode",
         "uiTheme": "vs-dark",
-        "path": "./themes/godot-theme-vscode-breeze-dark-legacy.json"
+        "path": "./themes/legacy-godot-theme-vscode.json"
+      },
+      {
+        "label": "Godot Theme VSCode Breeze Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/legacy-godot-theme-vscode-breeze-dark.json"
       }
     ]
   }
