@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+- Added more themes.
+
 ## 1.0.4
 
 - Fixed comments issues on CSharp.
