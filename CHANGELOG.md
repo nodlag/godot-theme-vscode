@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3
+
+- Updated border colors.
+
 ## 1.1.2
 
 - Updated border colors.
