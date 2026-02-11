@@ -1,13 +1,12 @@
 {
     "$schema": "vscode://schemas/color-theme",
-    "name": "Godot Theme VSCode Breeze Dark (Semantic Highlighting Italic)",
+    "name": "Godot Theme VSCode Breeze dark (legacy)",
     "author": "Javier Garrido Galdón",
     "maintainers": [
         "Javier Garrido Galdón <nodlag@gmail.com>"
     ],
     "semanticClass": "theme.godot-mono",
-    "semanticHighlighting": true,
-    "godot-theme-vscode-breeze-dark-semantic-highlighting-italic": {
+    "godot-theme-vscode-breeze-dark": {
         "base": [
             "#161718", // original #222427
             "#E0E0E0",
@@ -19,7 +18,7 @@
             "#FF5F84", // original: #EE7987
             "#B7FDE2",
             "#F78ACA", // original #F092C9
-            "#F9ECA8" 
+            "#F9ECA8"
         ],
         "ansi": [
             "#3E4246",
@@ -1363,13 +1362,12 @@
         {
             "name": "BLUE SOFT Broad Daylight #C3DFFC",
             "scope": [
-                // C# 
+                // C#
                 "variable.other.object.property.cs",
                 "entity.name.type.delegate.cs",
 
                 // GDSCRIPT
                 "variable.other.gdscript",
-                "variable.other.constant.gdscript",
                 "variable.other.property.gdscript",
             ],
             "settings": {
@@ -1398,7 +1396,7 @@
             "name": "ORANGE Apricot #F4B57D",
             "scope": [
                 // C#
-                
+
                 //GDSCRIPT
                 "entity.name.function.decorator.gdscript",
             ],
@@ -1461,91 +1459,120 @@
     ],
     "semanticTokenColors": { // https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide
         "namespace": {
-            "foreground": "#AAFCDD"
+            "foreground": "#AAFCDD",
+            "fontStyle": ""
         },
         "class": {
-            "foreground": "#AAFCDD"
+            "foreground": "#AAFCDD",
+            "fontStyle": ""
         },
         "enum": {
-            "foreground": "#1D9CF8" // original #6FB0F9
+            "foreground": "#1D9CF8", // original #6FB0F9
+            "fontStyle": ""
         },
         "interface": {
-            "foreground": "#1D9CF8" // original #6FB0F9
+            "foreground": "#1D9CF8", // original #6FB0F9
+            "fontStyle": ""
         },
         "struct": {
-            "foreground": "#41F0C4" // original: #82FBC6
+            "foreground": "#41F0C4", // original: #82FBC6
+            "fontStyle": ""
         },
         "typeParameter": {
-            "foreground": "#41F0C4" // original: #82FBC6
+            "foreground": "#41F0C4", // original: #82FBC6
+            "fontStyle": ""
         },
         "type": {
-            "foreground": "#41F0C4" // original: #82FBC6
+            "foreground": "#41F0C4", // original: #82FBC6
+            "fontStyle": ""
         },
         "parameter": {
-            "foreground": "#B1FAEC" // original: #D2FDEE
+            "foreground": "#B1FAEC", // original: #D2FDEE
+            "fontStyle": ""
         },
         "variable": {
-            "foreground": "#C3DFFC"
+            "foreground": "#C3DFFC",
+            "fontStyle": ""
         },
         "property": {
-            "foreground": "#B1FAEC" // original: #D2FDEE
+            "foreground": "#B1FAEC", // original: #D2FDEE
+            "fontStyle": ""
         },
         "enumMember": {
-            "foreground": "#FFA27A" // original: #F4B57D
+            "foreground": "#FFA27A", // original: #F4B57D
+            "fontStyle": ""
         },
         "decorator": {
-            "foreground": "#AAFCDD"
+            "foreground": "#AAFCDD",
+            "fontStyle": ""
         },
         "event": {
-            "foreground": "#CDCFD2"
+            "foreground": "#CDCFD2",
+            "fontStyle": ""
         },
         "function": {
-            "foreground": "#89E2FC"
+            "foreground": "#89E2FC",
+            "fontStyle": ""
         },
         "method": {
-            "foreground": "#89E2FC"
+            "foreground": "#89E2FC",
+            "fontStyle": ""
         },
         "macro": {
-            "foreground": "#AB6CD0" // original #A577BF
+            "foreground": "#AB6CD0", // original #A577BF
+            "fontStyle": ""
         },
         "label": {
-            "foreground": "#FFA27A" // original: #F4B57D
+            "foreground": "#FFA27A", // original: #F4B57D
+            "fontStyle": ""
         },
         "comment": {
-            "foreground": "#7C7E84" // original: #76787D
+            "foreground": "#7C7E84", // original: #76787D
+            "fontStyle": ""
         },
         "string": {
-            "foreground": "#FFE1A8" // original: #FCEEAA
+            "foreground": "#FFE1A8", // original: #FCEEAA
+            "fontStyle": ""
         },
         "keyword": {
-            "foreground": "#FF5F84" // original: #EE7987
+            "foreground": "#FF5F84", // original: #EE7987
+            "fontStyle": ""
         },
         "number": {
-            "foreground": "#B7FDE2"
+            "foreground": "#B7FDE2",
+            "fontStyle": ""
         },
         "regexp": {
-            "foreground": "#FFA27A" // original: #F4B57D
+            "foreground": "#FFA27A", // original: #F4B57D
+            "fontStyle": ""
         },
         "operator": {
-            "foreground": "#B1C8FA"
+            "foreground": "#B1C8FA",
+            "fontStyle": ""
         },
         "struct": {
-            "foreground": "#41F0C4" // original: #82FBC6
+            "foreground": "#41F0C4", // original: #82FBC6
+            "fontStyle": ""
         },
         "field": {
-            "foreground": "#CDCFD2"
+            "foreground": "#CDCFD2",
+            "fontStyle": ""
         },
         "constant": {
-            "foreground": "#CDCFD2"
+            "foreground": "#CDCFD2",
+            "fontStyle": ""
         },
         "boolean": {
-            "foreground": "#FF5F84" // original: #EE7987
+            "foreground": "#FF5F84", // original: #EE7987
+            "fontStyle": ""
         },
         "controlKeyword": {
-            "foreground": "#F78ACA" // original #F092C9
+            "foreground": "#F78ACA", // original #F092C9
+            "fontStyle": ""
         },
         "preprocessorText": {
-            "foreground": "#AB6CD0" // original #A577BF
+            "foreground": "#AB6CD0", // original #A577BF
+            "fontStyle": ""
         },
   }
 

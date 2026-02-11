@@ -1,13 +1,12 @@
 {
     "$schema": "vscode://schemas/color-theme",
-    "name": "Godot Theme VSCode (Semantic Highlighting)",
+    "name": "Godot Theme VSCode (Legacy)",
     "author": "Javier Garrido Galdón",
     "maintainers": [
         "Javier Garrido Galdón <nodlag@gmail.com>"
     ],
     "semanticClass": "theme.godot-mono",
-    "semanticHighlighting": true,
-    "godot-theme-vscode-semantic-highlighting": {
+    "godot-theme-vscode": {
         "base": [
             "#16191F", // original #1E2228
             "#E0E0E0",
@@ -19,7 +18,7 @@
             "#FF5F84", // original: #EE7987
             "#B7FDE2",
             "#F78ACA", // original #F092C9
-            "#F9ECA8" 
+            "#F9ECA8"
         ],
         "ansi": [
             "#373D49",
@@ -1363,7 +1362,7 @@
         {
             "name": "BLUE SOFT Broad Daylight #C3DFFC",
             "scope": [
-                // C# 
+                // C#
                 "variable.other.object.property.cs",
                 "entity.name.type.delegate.cs",
 
@@ -1397,7 +1396,7 @@
             "name": "ORANGE Apricot #F4B57D",
             "scope": [
                 // C#
-                
+
                 //GDSCRIPT
                 "entity.name.function.decorator.gdscript",
             ],
@@ -1500,7 +1499,7 @@
             "fontStyle": ""
         },
         "enumMember": {
-            "foreground": "#FFA27A", // original: #F4B57D 
+            "foreground": "#FFA27A", // original: #F4B57D
             "fontStyle": ""
         },
         "decorator": {

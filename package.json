@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/nodlag/godot-theme-vscode.git"
   },
-  "version": "1.0.4",
+  "version": "1.1.0",
   "publisher": "javier-garrido-galdon",
   "engines": {
     "vscode": "^1.50.0"
@@ -24,29 +24,14 @@
         "path": "./themes/godot-theme-vscode.json"
       },
       {
-        "label": "Godot Theme VSCode Breeze Dark",
+        "label": "Godot Theme VSCode (Legacy)",
         "uiTheme": "vs-dark",
-        "path": "./themes/godot-theme-vscode-breeze-dark.json"
+        "path": "./themes/godot-theme-vscode-legacy.json"
       },
       {
-        "label": "Godot Theme VSCode (Semantic Highlighting)",
+        "label": "Godot Theme VSCode Breeze Dark (Legacy)",
         "uiTheme": "vs-dark",
-        "path": "./themes/godot-theme-vscode-semantic-highlighting.json"
-      },
-      {
-        "label": "Godot Theme VSCode Breeze Dark (Semantic Highlighting)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/godot-theme-vscode-breeze-dark-semantic-highlighting.json"
-      },
-      {
-        "label": "Godot Theme VSCode (Semantic Highlighting Italic)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/godot-theme-vscode-semantic-highlighting-italic.json"
-      },
-      {
-        "label": "Godot Theme VSCode Breeze Dark (Semantic Highlighting Italic)",
-        "uiTheme": "vs-dark",
-        "path": "./themes/godot-theme-vscode-breeze-dark-semantic-highlighting-italic.json"
+        "path": "./themes/godot-theme-vscode-breeze-dark-legacy.json"
       }
     ]
   }
