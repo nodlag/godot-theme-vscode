@@ -118,7 +118,7 @@
         "tab.activeBackground": "#292929",
         "tab.activeForeground": "#e1e1e1",
         "tab.border": "#141414",
-        "tab.activeBorderTop": "#569eff",
+        //"tab.activeBorderTop": "#569eff",
         "tab.inactiveBackground": "#141414",
         "tab.inactiveForeground": "#7C7E84", // original: #76787D
         "editor.foreground": "#CDCFD2",
