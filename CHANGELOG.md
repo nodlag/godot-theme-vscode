@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Fixed button colors.
+
 ## 1.1.0
 
 - Added more themes.

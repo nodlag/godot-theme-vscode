@@ -71,9 +71,9 @@
         "foreground": "#e1e1e1",
         "selection.background": "#5B728B",
         "errorForeground": "#FF5F84", // original: #EE7987
-        "button.background": "#569eff",
+        "button.background": "#424242",
         "button.foreground": "#e1e1e1",
-        "button.secondaryBackground": "#569eff",
+        "button.secondaryBackground": "#424242",
         "button.secondaryForeground": "#e1e1e1",
         "dropdown.background": "#141414",
         "dropdown.border": "#141414",
