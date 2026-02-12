@@ -12,7 +12,7 @@ Powerful color themes to focus on creating the best games
 - 4 Modern Theme colors (Based in 4.6+)
 - 2 Legacy Theme colors
 
-![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshot-godot-theme-vscode-gdscript.png)
+![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/gdscript-modern.png)
 
 
 ## Recommended
@@ -40,14 +40,14 @@ This theme is maintained by the following person(s):
 
 ## More screenshots
 
-Godot Theme VSCode Breeze Dark:
-![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshot-godot-theme-vscode-breeze-dark-gdscript.png)
-
-Godot Theme VSCode (C#):
-![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshot-godot-theme-vscode-csharp.png)
-
 Godot Theme VSCode Breeze Dark (C#):
-![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshot-godot-theme-vscode-breeze-dark-csharp.png)
+![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/csharp-modern-breeze-dark.png)
+
+Godot Theme VSCode Godot 2 (GDScript):
+![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/gdscript-modern-godot-2.png)
+
+Godot Theme VSCode Godot 3 (GDScript):
+![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/gdscript-modern-godot-3.png)
 
 ## License
 

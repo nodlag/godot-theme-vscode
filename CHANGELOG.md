@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.7
+
+- Updated screenshots.
+
 ## 1.1.6
 
 - Fixed focus border.
