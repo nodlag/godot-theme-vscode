@@ -68,7 +68,7 @@
         "terminal.ansiMagenta": "#FF5F84", // original: #EE7987
         "terminal.ansiCyan": "#41F0C4", // original: #82FBC6
         "terminal.ansiWhite": "#e1e1e1",
-        "focusBorder": "#2f2d33",
+        "focusBorder": "#00000000",
         "foreground": "#e1e1e1",
         "selection.background": "#5B728B",
         "errorForeground": "#FF5F84", // original: #EE7987
