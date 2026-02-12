@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.6
+
+- Fixed focus border.
+
 ## 1.1.5
 
 - Improved colors.
