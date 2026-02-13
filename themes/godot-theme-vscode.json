@@ -1395,7 +1395,7 @@
             }
         },
         {
-            "name": "ORANGE Apricot #F4B57D",
+            "name": "ORANGE Apricot #ffb373",
             "scope": [
                 // C#
 
@@ -1403,7 +1403,7 @@
                 "entity.name.function.decorator.gdscript",
             ],
             "settings": {
-                "foreground": "#FFA27A", // original: #F4B57D
+                "foreground": "#ffb373",
                 "fontStyle": ""
             }
         },
@@ -1501,7 +1501,7 @@
             "fontStyle": ""
         },
         "enumMember": {
-            "foreground": "#FFA27A", // original: #F4B57D
+            "foreground": "#ffb373",
             "fontStyle": ""
         },
         "decorator": {
@@ -1525,7 +1525,7 @@
             "fontStyle": ""
         },
         "label": {
-            "foreground": "#FFA27A", // original: #F4B57D
+            "foreground": "#ffb373",
             "fontStyle": ""
         },
         "comment": {
@@ -1545,7 +1545,7 @@
             "fontStyle": ""
         },
         "regexp": {
-            "foreground": "#FFA27A", // original: #F4B57D
+            "foreground": "#ffb373",
             "fontStyle": ""
         },
         "operator": {
