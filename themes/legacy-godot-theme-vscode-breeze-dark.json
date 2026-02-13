@@ -1433,14 +1433,14 @@
             }
         },
         {
-            "name": "GREEN Mantis #7BC066",
+            "name": "GREEN Mantis #63c259",
             "scope": [
                 // GDSCRIPT
                 "constant.character.escape.nodepath.gdscript",
                 "keyword.control.flow.nodepath.gdscript",
             ],
             "settings": {
-                "foreground": "#7BC066",
+                "foreground": "#63c259",
                 "fontStyle": ""
             }
         },
