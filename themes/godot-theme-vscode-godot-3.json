@@ -1408,7 +1408,7 @@
             }
         },
         {
-            "name": "PURPLE Wisteria #A577BF",
+            "name": "PURPLE Wisteria #ad75c4",
             "scope": [
                 // C#
                 "entity.name.variable.preprocessor.symbol.cs",
@@ -1430,7 +1430,7 @@
                 "string.unquoted.preprocessor.message.gdscript",
             ],
             "settings": {
-                "foreground": "#AB6CD0", // original #A577BF
+                "foreground": "#ad75c4",
                 "fontStyle": ""
             }
         },
@@ -1521,7 +1521,7 @@
             "fontStyle": ""
         },
         "macro": {
-            "foreground": "#AB6CD0", // original #A577BF
+            "foreground": "#ad75c4",
             "fontStyle": ""
         },
         "label": {
@@ -1573,7 +1573,7 @@
             "fontStyle": ""
         },
         "preprocessorText": {
-            "foreground": "#AB6CD0", // original #A577BF
+            "foreground": "#ad75c4",
             "fontStyle": ""
         },
   }
