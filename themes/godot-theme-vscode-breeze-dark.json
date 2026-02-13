@@ -170,7 +170,7 @@
         "editorGutter.modifiedBackground": "#82FBC680",
         "editorGutter.addedBackground": "#89E2FC80",
         "editorGutter.deletedBackground": "#EE798780",
-        "gitDecoration.modifiedResourceForeground": "#FFE1A8", // original: #FCEEAA
+        "gitDecoration.modifiedResourceForeground": "#ffeda1",
         "gitDecoration.deletedResourceForeground": "#FF5F84", // original: #EE7987
         "gitDecoration.untrackedResourceForeground": "#41F0C4", // original: #82FBC6
         "gitDecoration.ignoredResourceForeground": "#7C7E84", // original: #76787D
@@ -1447,14 +1447,14 @@
             }
         },
         {
-            "name": "YELLOW Eggnog #FCEEAA",
+            "name": "YELLOW Eggnog #ffeda1",
             "scope": [
                 // GDSCRIPT
                 "constant.character.escape",
                 "meta.literal.nodepath.gdscript",
             ],
             "settings": {
-                "foreground": "#FFE1A8", // original: #FCEEAA
+                "foreground": "#ffeda1",
                 "fontStyle": ""
             }
         },
@@ -1533,7 +1533,7 @@
             "fontStyle": ""
         },
         "string": {
-            "foreground": "#FFE1A8", // original: #FCEEAA
+            "foreground": "#ffeda1",
             "fontStyle": ""
         },
         "keyword": {
