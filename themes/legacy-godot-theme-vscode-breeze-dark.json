@@ -14,7 +14,7 @@
             "#ffffff80",
             "#41F0C4", // original: #82FBC6
             "#89E2FC",
-            "#B1FAEC", // original: #D2FDEE
+            "#c7ffed",
             "#FF5F84", // original: #EE7987
             "#B7FDE2",
             "#F78ACA", // original #F092C9
@@ -84,7 +84,7 @@
         "input.placeholderForeground": "#ffffff80",
         "inputOption.activeBorder": "#5698C5",
         "inputValidation.infoBorder": "#FF5F84", // original: #EE7987
-        "inputValidation.warningBorder": "#B1FAEC", // original: #D2FDEE
+        "inputValidation.warningBorder": "#c7ffed",
         "inputValidation.errorBorder": "#FF5F84", // original: #EE7987
         "badge.foreground": "#E0E0E0",
         "badge.background": "#3E4246",
@@ -97,7 +97,7 @@
         "list.hoverBackground": "#2C2E32",
         "list.hoverForeground": "#FFFFFF",
         "list.inactiveSelectionBackground": "#3E4246",
-        "list.warningForeground": "#B1FAEC", // original: #D2FDEE
+        "list.warningForeground": "#c7ffed",
         "list.errorForeground": "#FF5F84", // original: #EE7987
         "activityBar.background": "#2C2E32",
         "activityBar.inactiveForeground": "#ffffff80",
@@ -128,7 +128,7 @@
         "editor.foldBackground": "#3E424680",
         "editor.wordHighlightBackground": "#5B728B",
         "editor.wordHighlightStrongBackground": "#89E2FC50",
-        "editor.findMatchBackground": "#D2FDEE80",
+        "editor.findMatchBackground": "#c7ffed80",
         "editor.findMatchHighlightBackground": "#FFFFFF40",
         "editor.findRangeHighlightBackground": "#3E424675",
         "editor.hoverHighlightBackground": "#5B728B",
@@ -156,14 +156,14 @@
         "editorBracketHighlight.foreground6": "#abc9ff",
         "editorBracketHighlight.unexpectedBracket.foreground": "#FF5F84", // original: #EE7987
         "editorOverviewRuler.border": "#27292D",
-        "editorOverviewRuler.selectionHighlightForeground": "#B1FAEC", // original: #D2FDEE
+        "editorOverviewRuler.selectionHighlightForeground": "#c7ffed",
         "editorOverviewRuler.wordHighlightForeground": "#41F0C4", // original: #82FBC6
         "editorOverviewRuler.wordHighlightStrongForeground": "#89E2FC",
         "editorOverviewRuler.modifiedForeground": "#82FBC680",
         "editorOverviewRuler.addedForeground": "#89E2FC80",
         "editorOverviewRuler.deletedForeground": "#EE798780",
         "editorOverviewRuler.errorForeground": "#EE798780",
-        "editorOverviewRuler.warningForeground": "#D2FDEE80",
+        "editorOverviewRuler.warningForeground": "#c7ffed80",
         "editorOverviewRuler.infoForeground": "#82FBC680",
         "editorError.foreground": "#FF5F84", // original: #EE7987
         "editorWarning.foreground": "#FADF79",
@@ -174,7 +174,7 @@
         "gitDecoration.deletedResourceForeground": "#FF5F84", // original: #EE7987
         "gitDecoration.untrackedResourceForeground": "#41F0C4", // original: #82FBC6
         "gitDecoration.ignoredResourceForeground": "#ffffff80",
-        "gitDecoration.conflictingResourceForeground": "#B1FAEC", // original: #D2FDEE
+        "gitDecoration.conflictingResourceForeground": "#c7ffed",
         "diffEditor.insertedTextBackground": "#89E2FC20",
         "diffEditor.removedTextBackground": "#EE798750",
         "editorWidget.background": "#3E4246",
@@ -235,7 +235,7 @@
         "debugToolBar.background": "#3E4246",
         "walkThrough.embeddedEditorBackground": "#3E4246",
         "settings.headerForeground": "#E0E0E0",
-        "settings.modifiedItemIndicator": "#B1FAEC", // original: #D2FDEE
+        "settings.modifiedItemIndicator": "#c7ffed",
         "settings.dropdownBackground": "#3E4246",
         "settings.dropdownForeground": "#E0E0E0",
         "settings.dropdownBorder": "#27292D",
@@ -312,7 +312,7 @@
                 "markup.changed"
             ],
             "settings": {
-                "foreground": "#B1FAEC" // original: #D2FDEE
+                "foreground": "#c7ffed"
             }
         },
         {
@@ -365,7 +365,7 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#B1FAEC" // original: #D2FDEE
+                "foreground": "#c7ffed"
             }
         },
         {
@@ -585,7 +585,7 @@
                 "comment.block.documentation variable"
             ],
             "settings": {
-                "foreground": "#B1FAEC", // original: #D2FDEE
+                "foreground": "#c7ffed",
                 "fontStyle": "italic"
             }
         },
@@ -666,7 +666,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#B1FAEC" // original: #D2FDEE
+                "foreground": "#c7ffed"
             }
         },
         {
@@ -845,7 +845,7 @@
                 "constant.other.timestamp"
             ],
             "settings": {
-                "foreground": "#B1FAEC" // original: #D2FDEE
+                "foreground": "#c7ffed"
             }
         },
         {
@@ -907,7 +907,7 @@
                 "meta.type.parameters entity.name.type"
             ],
             "settings": {
-                "foreground": "#B1FAEC" // original: #D2FDEE
+                "foreground": "#c7ffed"
             }
         },
         {
@@ -964,7 +964,7 @@
                 "punctuation.definition.group.regexp"
             ],
             "settings": {
-                "foreground": "#B1FAEC" // original: #D2FDEE
+                "foreground": "#c7ffed"
             }
         },
         {
@@ -1049,7 +1049,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#B1FAEC" // original: #D2FDEE
+                "foreground": "#c7ffed"
             }
         },
         {
@@ -1284,7 +1284,7 @@
             }
         },
         {
-            "name": "GREEN SOFT MINTY Mint Coffee #D2FDEE",
+            "name": "GREEN SOFT MINTY Mint Coffee #c7ffed",
             "scope": [
                 // C#
                 "entity.name.type.cs",
@@ -1298,7 +1298,7 @@
                 "entity.name.type.class.gdscript",
             ],
             "settings": {
-                "foreground": "#B1FAEC", // original: #D2FDEE
+                "foreground": "#c7ffed",
                 "fontStyle": ""
             }
         },
@@ -1487,7 +1487,7 @@
             "fontStyle": ""
         },
         "parameter": {
-            "foreground": "#B1FAEC", // original: #D2FDEE
+            "foreground": "#c7ffed",
             "fontStyle": ""
         },
         "variable": {
@@ -1495,7 +1495,7 @@
             "fontStyle": ""
         },
         "property": {
-            "foreground": "#B1FAEC", // original: #D2FDEE
+            "foreground": "#c7ffed",
             "fontStyle": ""
         },
         "enumMember": {
