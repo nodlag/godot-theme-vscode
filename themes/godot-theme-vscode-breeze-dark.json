@@ -56,7 +56,7 @@
         "terminal.ansiBrightRed": "#FF5F84", // original: #EE7987
         "terminal.ansiBrightGreen": "#41F0C4", // original: #82FBC6
         "terminal.ansiBrightYellow": "#F9ECA8",
-        "terminal.ansiBrightBlue": "#B1C8FA",
+        "terminal.ansiBrightBlue": "#abc9ff",
         "terminal.ansiBrightMagenta": "#FF5F84", // original: #EE7987
         "terminal.ansiBrightCyan": "#89E2FC",
         "terminal.ansiBrightWhite": "#e1e1e1",
@@ -148,12 +148,12 @@
         "editorIndentGuide.background6": "#3B4352",
         "editorRuler.foreground": "#e1e1e11A",
         "editorCodeLens.foreground": "#ffffff80",
-        "editorBracketHighlight.foreground1": "#B1C8FA",
-        "editorBracketHighlight.foreground2": "#B1C8FA",
-        "editorBracketHighlight.foreground3": "#B1C8FA",
-        "editorBracketHighlight.foreground4": "#B1C8FA",
-        "editorBracketHighlight.foreground5": "#B1C8FA",
-        "editorBracketHighlight.foreground6": "#B1C8FA",
+        "editorBracketHighlight.foreground1": "#abc9ff",
+        "editorBracketHighlight.foreground2": "#abc9ff",
+        "editorBracketHighlight.foreground3": "#abc9ff",
+        "editorBracketHighlight.foreground4": "#abc9ff",
+        "editorBracketHighlight.foreground5": "#abc9ff",
+        "editorBracketHighlight.foreground6": "#abc9ff",
         "editorBracketHighlight.unexpectedBracket.foreground": "#FF5F84", // original: #EE7987
         "editorOverviewRuler.border": "#191b1d",
         "editorOverviewRuler.selectionHighlightForeground": "#B1FAEC", // original: #D2FDEE
@@ -1319,7 +1319,7 @@
             }
         },
         {
-            "name": "BLUE PURPLE GREY Night Snow #B1C8FA",
+            "name": "BLUE PURPLE GREY Night Snow #abc9ff",
             "scope": [
                 // C#
                 "punctuation.curlybrace.close.cs",
@@ -1357,7 +1357,7 @@
                 "keyword.operator.boolean.gdscript",
             ],
             "settings": {
-                "foreground": "#B1C8FA",
+                "foreground": "#abc9ff",
                 "fontStyle": ""
             }
         },
@@ -1549,7 +1549,7 @@
             "fontStyle": ""
         },
         "operator": {
-            "foreground": "#B1C8FA",
+            "foreground": "#abc9ff",
             "fontStyle": ""
         },
         "struct": {
