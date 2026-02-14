@@ -17,12 +17,12 @@
             "#c7ffed",
             "#FF5F84", // original: #EE7987
             "#B7FDE2",
-            "#F78ACA", // original #F092C9
+            "#ff8ccc",
             "#F9ECA8"
         ],
         "ansi": [
             "#292929",
-            "#F78ACA", // original #F092C9
+            "#ff8ccc",
             "#89E2FC",
             "#F9ECA8",
             "#B7FDE2",
@@ -948,7 +948,7 @@
                 "string.regexp punctuation.definition.string.end"
             ],
             "settings": {
-                "foreground": "#F78ACA" // original #F092C9
+                "foreground": "#ff8ccc"
             }
         },
         {
@@ -976,7 +976,7 @@
                 "keyword.operator.negation.regexp"
             ],
             "settings": {
-                "foreground": "#F78ACA" // original #F092C9
+                "foreground": "#ff8ccc"
             }
         },
         {
@@ -1248,7 +1248,7 @@
             }
         },
         {
-            "name": "PINK Shimmering Love #F092C9",
+            "name": "PINK Shimmering Love #ff8ccc",
             "scope": [
                 // C#
                 "keyword.control.loop.for.cs",
@@ -1261,7 +1261,7 @@
                 "keyword.control.gdscript",
             ],
             "settings": {
-                "foreground": "#F78ACA", // original #F092C9
+                "foreground": "#ff8ccc",
                 "fontStyle": ""
             }
         },
@@ -1569,7 +1569,7 @@
             "fontStyle": ""
         },
         "controlKeyword": {
-            "foreground": "#F78ACA", // original #F092C9
+            "foreground": "#ff8ccc",
             "fontStyle": ""
         },
         "preprocessorText": {
