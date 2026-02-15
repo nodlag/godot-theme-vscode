@@ -9,7 +9,7 @@ Powerful color themes to focus on creating the best games
 - Supports a lot of programing languages
 
 6 Themes included:
-- 4 Modern Theme colors (Based in 4.6+)
+- 4 Modern Theme colors (4.6+ Based)
 - 2 Legacy Theme colors
 
 ![Screenshot](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/gdscript-modern.png)

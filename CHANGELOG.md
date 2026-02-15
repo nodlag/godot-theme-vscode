@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.8
+
+- More accurate code colors.
+
 ## 1.1.7
 
 - Updated screenshots.
