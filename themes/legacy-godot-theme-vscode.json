@@ -1360,7 +1360,7 @@
             }
         },
         {
-            "name": "BLUE SOFT Broad Daylight #C3DFFC",
+            "name": "BLUE SOFT Broad Daylight #bce0ff",
             "scope": [
                 // C#
                 "variable.other.object.property.cs",
@@ -1371,7 +1371,7 @@
                 "variable.other.property.gdscript",
             ],
             "settings": {
-                "foreground": "#C3DFFC",
+                "foreground": "#bce0ff",
                 "fontStyle": ""
             }
         },
@@ -1491,7 +1491,7 @@
             "fontStyle": ""
         },
         "variable": {
-            "foreground": "#C3DFFC",
+            "foreground": "#bce0ff",
             "fontStyle": ""
         },
         "property": {
