@@ -120,7 +120,7 @@
         //"tab.activeBorderTop": "#70bafa",
         "tab.inactiveBackground": "#1c1f24",
         "tab.inactiveForeground": "#ffffff80",
-        "editor.foreground": "#CDCFD2",
+        "editor.foreground": "#ffffffbf",
         "editor.background": "#23272e",
         "editorLineNumber.foreground": "#A7C1AA",
         "editor.selectionBackground": "#373d49",
@@ -221,12 +221,12 @@
         "titleBar.activeForeground": "#e1e1e1",
         "titleBar.inactiveBackground": "#1c1f24",
         "titleBar.inactiveForeground": "#ffffff80",
-        "commandCenter.foreground": "#CDCFD2",
+        "commandCenter.foreground": "#ffffffbf",
         "commandCenter.activeForeground": "#e1e1e1",
         "commandCenter.background": "#1c1f24",
         "commandCenter.activeBackground": "#373d49",
         "commandCenter.border": "#3d3b44",
-        "commandCenter.inactiveForeground": "#CDCFD2",
+        "commandCenter.inactiveForeground": "#ffffffbf",
         "commandCenter.inactiveBorder": "#3d3b44",
         "commandCenter.activeBorder": "#3d3b44",
         "extensionButton.prominentForeground": "#e1e1e1",
@@ -1193,7 +1193,7 @@
         },
         // --- CUSTOM COLORS FOR GODOT --- //
         {
-            "name": "GREY Ghost Whisperer #CDCFD2",
+            "name": "GREY Ghost Whisperer #ffffffbf",
             "scope": [
                 // C#
                 "entity.name.type.enum.cs",
@@ -1205,7 +1205,7 @@
                 "variable.parameter.function.language.gdscript",
             ],
             "settings": {
-                "foreground": "#CDCFD2",
+                "foreground": "#ffffffbf",
                 "fontStyle": ""
             }
         },
@@ -1509,7 +1509,7 @@
             "fontStyle": ""
         },
         "event": {
-            "foreground": "#CDCFD2",
+            "foreground": "#ffffffbf",
             "fontStyle": ""
         },
         "function": {
@@ -1557,11 +1557,11 @@
             "fontStyle": ""
         },
         "field": {
-            "foreground": "#CDCFD2",
+            "foreground": "#ffffffbf",
             "fontStyle": ""
         },
         "constant": {
-            "foreground": "#CDCFD2",
+            "foreground": "#ffffffbf",
             "fontStyle": ""
         },
         "boolean": {

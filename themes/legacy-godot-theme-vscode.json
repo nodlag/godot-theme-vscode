@@ -107,7 +107,7 @@
         "activityBarBadge.background": "#6993C2",
         "activityBarBadge.foreground": "#E0E0E0",
         "sideBar.background": "#22262D",
-        "sideBar.foreground": "#CDCFD2",
+        "sideBar.foreground": "#ffffffbf",
         "sideBarTitle.foreground": "#E0E0E0",
         "sideBarSectionHeader.background": "#262B33",
         "sideBarSectionHeader.border": "#22262D",
@@ -120,7 +120,7 @@
         "tab.activeBorderTop": "#6993C2",
         "tab.inactiveBackground": "#262B33",
         "tab.inactiveForeground": "#ffffff80",
-        "editor.foreground": "#CDCFD2",
+        "editor.foreground": "#ffffffbf",
         "editor.background": "#16191F", // original #1E2228
         "editorLineNumber.foreground": "#A7C1AA",
         "editor.selectionBackground": "#373D49",
@@ -219,12 +219,12 @@
         "titleBar.activeForeground": "#E0E0E0",
         "titleBar.inactiveBackground": "#22262D",
         "titleBar.inactiveForeground": "#ffffff80",
-        "commandCenter.foreground": "#CDCFD2",
+        "commandCenter.foreground": "#ffffffbf",
         "commandCenter.activeForeground": "#E0E0E0",
         "commandCenter.background": "#262B33",
         "commandCenter.activeBackground": "#373D49",
         "commandCenter.border": "#262B33",
-        "commandCenter.inactiveForeground": "#CDCFD2",
+        "commandCenter.inactiveForeground": "#ffffffbf",
         "commandCenter.inactiveBorder": "#262B33",
         "commandCenter.activeBorder": "#373D49",
         "extensionButton.prominentForeground": "#E0E0E0",
@@ -1191,7 +1191,7 @@
         },
         // --- CUSTOM COLORS FOR GODOT --- //
         {
-            "name": "GREY Ghost Whisperer #CDCFD2",
+            "name": "GREY Ghost Whisperer #ffffffbf",
             "scope": [
                 // C#
                 "entity.name.type.enum.cs",
@@ -1203,7 +1203,7 @@
                 "variable.parameter.function.language.gdscript",
             ],
             "settings": {
-                "foreground": "#CDCFD2",
+                "foreground": "#ffffffbf",
                 "fontStyle": ""
             }
         },
@@ -1507,7 +1507,7 @@
             "fontStyle": ""
         },
         "event": {
-            "foreground": "#CDCFD2",
+            "foreground": "#ffffffbf",
             "fontStyle": ""
         },
         "function": {
@@ -1555,11 +1555,11 @@
             "fontStyle": ""
         },
         "field": {
-            "foreground": "#CDCFD2",
+            "foreground": "#ffffffbf",
             "fontStyle": ""
         },
         "constant": {
-            "foreground": "#CDCFD2",
+            "foreground": "#ffffffbf",
             "fontStyle": ""
         },
         "boolean": {
