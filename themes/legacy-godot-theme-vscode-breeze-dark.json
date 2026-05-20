@@ -123,7 +123,7 @@
         "editor.foreground": "#ffffffbf",
         "editor.background": "#161718", // original #222427
         "editorLineNumber.foreground": "#A7C1AA",
-        "editor.selectionBackground": "#3E4246",
+        "editor.selectionBackground": "#3daee966",
         "editor.selectionHighlightBackground": "#424450",
         "editor.foldBackground": "#3E424680",
         "editor.wordHighlightBackground": "#5B728B",

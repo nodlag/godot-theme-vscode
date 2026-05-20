@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.9
+
+- Fixed selection color.
+
 ## 1.1.8
 
 - More accurate code colors.
