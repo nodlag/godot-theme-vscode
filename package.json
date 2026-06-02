@@ -2,12 +2,12 @@
   "name": "godot-theme-vscode",
   "displayName": "Godot Theme VSCode",
   "homepage": "https://github.com/nodlag/godot-theme-vscode",
-  "description": "A Godot theme for Visual Studio Code",
+  "description": "A collection of dark themes for Visual Studio Code inspired by the Godot Engine editor. Optimized for GDScript and C# (Godot Mono) with first-class syntax highlighting. 7 theme variants included.",
   "repository": {
     "type": "git",
     "url": "https://github.com/nodlag/godot-theme-vscode.git"
   },
-  "version": "1.1.9",
+  "version": "1.2.0",
   "publisher": "javier-garrido-galdon",
   "engines": {
     "vscode": "^1.50.0"
@@ -15,6 +15,26 @@
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "godot",
+    "godot engine",
+    "godot 4",
+    "gdscript",
+    "c#",
+    "csharp",
+    "godot mono",
+    "theme",
+    "color theme",
+    "dark theme",
+    "syntax highlighting",
+    "game development",
+    "gamedev",
+    "godot tools"
+  ],
+  "galleryBanner": {
+    "color": "#3a3f4b",
+    "theme": "dark"
+  },
   "icon": "icon.png",
   "contributes": {
     "themes": [
@@ -37,6 +57,11 @@
         "label": "(Modern) Godot Theme VSCode Godot 3",
         "uiTheme": "vs-dark",
         "path": "./themes/godot-theme-vscode-godot-3.json"
+      },
+      {
+        "label": "(Modern) Godot Theme VSCode Gray",
+        "uiTheme": "vs-dark",
+        "path": "./themes/godot-theme-vscode-gray.json"
       },
       {
         "label": "Godot Theme VSCode",

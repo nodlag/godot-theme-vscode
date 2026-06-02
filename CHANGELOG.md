@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+
+- More accuracy to original colors.
+- 2 new themes: (Modern) Gray, Oficial VSCode Dark 2026 with Godot syntax colors
+
 ## 1.1.9
 
 - Fixed selection color.
