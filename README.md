@@ -9,7 +9,7 @@
 - 🎮 **Godot Engine look & feel** — palette modeled after the Godot 4.6+ editor.
 - 🐍 **GDScript highlighting** via [godot-tools](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools).
 - 🧩 **C# / Godot Mono support** with dedicated semantic token colors.
-- 🌗 **7 dark theme variants** — Modern (Godot +4.6) and Legacy (Godot pre 4.6) families.
+- 🌗 **7 dark theme variants** — Modern (Godot 4.6+) and Legacy (Godot pre 4.6) families.
 - 🌈 **Broad language coverage** — sensible highlighting for many other programming languages, not just GDScript and C#.
 
 ## Installation
