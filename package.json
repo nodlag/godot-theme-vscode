@@ -39,7 +39,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Godot: Default",
+        "label": "Godot: (Default)",
         "uiTheme": "vs-dark",
         "path": "./themes/godot-theme-vscode.json"
       },
