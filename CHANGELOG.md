@@ -3,7 +3,8 @@
 ## 1.2.0
 
 - More accuracy to original colors.
-- 1 new theme: (Modern) Gray
+- 4 new themes: Gray, Light, Solarized (Dark), Solarized (Light).
+- Removed legacy themes.
 
 ## 1.1.9
 

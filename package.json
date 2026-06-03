@@ -2,7 +2,7 @@
   "name": "godot-theme-vscode",
   "displayName": "Godot Theme VSCode",
   "homepage": "https://github.com/nodlag/godot-theme-vscode",
-  "description": "A collection of dark themes for Visual Studio Code inspired by the Godot Engine editor. Optimized for GDScript and C# (Godot Mono) with first-class syntax highlighting. 7 theme variants included.",
+  "description": "A collection of dark and light themes for Visual Studio Code inspired by the Godot Engine editor. Optimized for GDScript and C# (Godot Mono) with first-class syntax highlighting. 8 theme variants included.",
   "repository": {
     "type": "git",
     "url": "https://github.com/nodlag/godot-theme-vscode.git"
@@ -39,39 +39,44 @@
   "contributes": {
     "themes": [
       {
-        "label": "(Modern) Godot Theme VSCode",
+        "label": "Godot: Default",
         "uiTheme": "vs-dark",
         "path": "./themes/godot-theme-vscode.json"
       },
       {
-        "label": "(Modern) Godot Theme VSCode Breeze Dark",
+        "label": "Godot: Breeze Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/godot-theme-vscode-breeze-dark.json"
       },
       {
-        "label": "(Modern) Godot Theme VSCode Godot 2",
+        "label": "Godot: Godot 2",
         "uiTheme": "vs-dark",
         "path": "./themes/godot-theme-vscode-godot-2.json"
       },
       {
-        "label": "(Modern) Godot Theme VSCode Godot 3",
+        "label": "Godot: Godot 3",
         "uiTheme": "vs-dark",
         "path": "./themes/godot-theme-vscode-godot-3.json"
       },
       {
-        "label": "(Modern) Godot Theme VSCode Gray",
+        "label": "Godot: Gray",
         "uiTheme": "vs-dark",
         "path": "./themes/godot-theme-vscode-gray.json"
       },
       {
-        "label": "Godot Theme VSCode",
+        "label": "Godot: Solarized (Dark)",
         "uiTheme": "vs-dark",
-        "path": "./themes/legacy-godot-theme-vscode.json"
+        "path": "./themes/godot-theme-vscode-solarized-dark.json"
       },
       {
-        "label": "Godot Theme VSCode Breeze Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/legacy-godot-theme-vscode-breeze-dark.json"
+        "label": "Godot: Light",
+        "uiTheme": "vs",
+        "path": "./themes/godot-theme-vscode-light.json"
+      },
+      {
+        "label": "Godot: Solarized (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/godot-theme-vscode-solarized-light.json"
       }
     ]
   }

@@ -1,15 +1,15 @@
-# Godot Theme VSCode — A Godot Engine Dark Theme for [Visual Studio Code](http://code.visualstudio.com)
+# Godot Theme VSCode — A Godot Engine Theme for [Visual Studio Code](http://code.visualstudio.com)
 
-> A dark color theme for [Visual Studio Code](http://code.visualstudio.com) inspired by the [Godot Engine](http://www.godotengine.org/) editor — tuned for **GDScript** and **C# (Godot Mono)** syntax highlighting.
+> Dark and light color themes for [Visual Studio Code](http://code.visualstudio.com) inspired by the [Godot Engine](http://www.godotengine.org/) editor — tuned for **GDScript** and **C# (Godot Mono)** syntax highlighting.
 
-**Godot Theme VSCode** brings the look and feel of the **Godot Engine** code editor to Visual Studio Code. If you build games with **Godot 4** using **GDScript** or **C# (Godot Mono)**, this theme gives you a familiar, focused dark workspace with carefully tuned syntax highlighting — so you can stop tweaking colors and get back to creating great games.
+**Godot Theme VSCode** brings the look and feel of the **Godot Engine** code editor to Visual Studio Code. If you build games with **Godot 4** using **GDScript** or **C# (Godot Mono)**, this theme gives you a familiar, focused workspace — dark or light — with carefully tuned syntax highlighting, so you can stop tweaking colors and get back to creating great games.
 
 ## Features
 
 - 🎮 **Godot Engine look & feel** — palette modeled after the Godot 4.6+ editor.
 - 🐍 **GDScript highlighting** via [godot-tools](https://marketplace.visualstudio.com/items?itemName=geequlim.godot-tools).
 - 🧩 **C# / Godot Mono support** with dedicated semantic token colors.
-- 🌗 **7 dark theme variants** — Modern (Godot 4.6+) and Legacy (Godot pre 4.6) families.
+- 🌗 **8 theme variants** — 6 dark + 2 light, all modeled on the Godot 4.6+ editor presets.
 - 🌈 **Broad language coverage** — sensible highlighting for many other programming languages, not just GDScript and C#.
 
 ## Installation
@@ -20,22 +20,23 @@ Install from the **Visual Studio Code Marketplace**:
    ```
    ext install javier-garrido-galdon.godot-theme-vscode
    ```
-2. Select the theme via **Color Theme** picker (`Ctrl+K Ctrl+T` / `Cmd+K Cmd+T`) and choose a **Godot Theme VSCode** variant.
+2. Open the **Color Theme** picker (`Ctrl+K Ctrl+T` / `Cmd+K Cmd+T`) and choose any variant prefixed **`Godot:`** (e.g. `Godot: Godot 3`, `Godot: Light`).
 
 ## Themes included
 
-**7 themes**, split into two families:
+**8 themes**, all based on the Godot 4.6+ editor presets. The names below are exactly as they appear in the **Color Theme** picker:
 
-**Modern** (Godot 4.6+ based):
-- Godot Theme VSCode (default)
-- Godot Theme VSCode Breeze Dark
-- Godot Theme VSCode Godot 2
-- Godot Theme VSCode Godot 3
-- Godot Theme VSCode Gray
+**Dark** (6):
+- Godot: Default
+- Godot: Breeze Dark
+- Godot: Godot 2
+- Godot: Godot 3
+- Godot: Gray
+- Godot: Solarized (Dark)
 
-**Legacy** (Godot pre 4.6 era look):
-- Godot Theme VSCode
-- Godot Theme VSCode Breeze Dark
+**Light** (2):
+- Godot: Light
+- Godot: Solarized (Light)
 
 ## Recommended
 
@@ -55,14 +56,14 @@ For GDScript support:
 
 ## More screenshots
 
-Godot Theme VSCode Breeze Dark — C# (Godot Mono) syntax highlighting:
-![Godot Theme VSCode Breeze Dark — C# Godot Mono syntax highlighting](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/csharp-modern-breeze-dark.png)
+Godot: Breeze Dark — C# (Godot Mono) syntax highlighting:
+![Godot: Breeze Dark — C# Godot Mono syntax highlighting](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/csharp-modern-breeze-dark.png)
 
-Godot Theme VSCode Godot 2 — GDScript syntax highlighting:
-![Godot Theme VSCode Godot 2 — GDScript syntax highlighting](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/gdscript-modern-godot-2.png)
+Godot: Godot 2 — GDScript syntax highlighting:
+![Godot: Godot 2 — GDScript syntax highlighting](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/gdscript-modern-godot-2.png)
 
-Godot Theme VSCode Godot 3 — GDScript syntax highlighting:
-![Godot Theme VSCode Godot 3 — GDScript syntax highlighting](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/gdscript-modern-godot-3.png)
+Godot: Godot 3 — GDScript syntax highlighting:
+![Godot: Godot 3 — GDScript syntax highlighting](https://raw.githubusercontent.com/nodlag/godot-theme-vscode/refs/heads/main/screenshots/gdscript-modern-godot-3.png)
 
 ## Team
 

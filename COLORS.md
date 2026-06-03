@@ -39,10 +39,19 @@ Each preset defines only **3 inputs**; everything else is derived by formula:
 | Godot 2 | `Color(0.24,0.23,0.27)` = `#3d3b45` | `Color(0.53,0.67,0.89)` = `#87abe3` | 0.3 |
 | Godot 3 | `Color(0.21,0.24,0.29)` = `#363d4a` | `Color(0.44,0.73,0.98)` = `#70bafa` | 0.3 |
 | **Gray** | `Color(0.24,0.24,0.24)` = `#3d3d3d` | `Color(0.44,0.73,0.98)` = `#70bafa` | 0.3 |
+| **Light** ☀ | `Color(0.9,0.9,0.9)` = `#e6e6e6` | `Color(0.18,0.50,1.0)` = `#2e80ff` | −0.06 |
+| **Solarized (Dark)** | `Color(0.03,0.21,0.26)` = `#083642` | `Color(0.15,0.55,0.82)` = `#268cd1` | 0.23 |
+| **Solarized (Light)** ☀ | `Color(0.89,0.86,0.79)` = `#e3dbc9` | `Color(0.15,0.55,0.82)` = `#268cd1` | −0.06 |
 | Black (OLED) | `#000000` | `#73bfff` | 0.0 |
-| Light | `#e6e6e6` | `#2e80ff` | −0.06 |
 
 > Gray shares its `accent_color` with Godot 3; only the `base_color` changes (neutral gray).
+> Solarized (Dark) and Solarized (Light) share their `accent_color`; only `base_color`/`contrast` differ.
+> **Theme polarity** is decided by `base_color.get_luminance() < 0.5` (`is_dark_theme`,
+> `editor_theme_manager.cpp:734`). ☀ marks the **light** themes (luminance ≥ 0.5): they flip
+> `mono_color` to black, use `font_color = #000000bf`, the light syntax branch (§3), and an inverted
+> UI elevation (§4). All presets above except the two ☀ and Black (OLED) are dark. Eight of these
+> presets ship as Modern themes (`contributes.themes`): the five dark + `Light`, `Solarized (Dark)`,
+> `Solarized (Light)`. Light themes are registered with `uiTheme: "vs"`, dark with `"vs-dark"`.
 
 ---
 
@@ -76,6 +85,27 @@ the corrections; identical across all Modern themes.
 > `macro`/`preprocessorText` (`#ad75c4`) have no equivalent in Godot's Default theme
 > (relevant for C#/Mono, which has its own highlighting). Left as an author choice.
 
+### Light themes syntax (Godot **light** branch)
+
+Light themes (`Light`, `Solarized (Light)`) use Godot's `: else` branch of the syntax ternaries
+(`editor_theme_manager.cpp:497-560`, taken when `dark_icon_and_font` is false). Exact Godot light hex:
+
+| Role | Godot light `Color(...)` | hex | Role | Godot light `Color(...)` | hex |
+|---|---|---|---|---|---|
+| symbol | `(0,0,0.61)` | `#00009c` | string | `(0.6,0.42,0)` | `#996b00` |
+| keyword | `(0.9,0.135,0.51)` | `#e62282` | string_placeholder | `(0.93,0.6,0.33)` | `#ed9954` |
+| control_flow | `(0.743,0.12,0.8)` | `#be1fcc` | number | `(0,0.55,0.28)` | `#008c47` |
+| base_type | `(0,0.6,0.2)` | `#009933` | function | `(0,0.225,0.9)` | `#0039e6` |
+| engine_type | `(0.11,0.55,0.4)` | `#1c8c66` | member_variable | `(0,0.4,0.68)` | `#0066ad` |
+| user_type | `(0.18,0.45,0.4)` | `#2e7366` | annotation | `(0.8,0.37,0)` | `#cc5e00` |
+| comment | `(0.08,0.08,0.08,0.5)` | `#14141480` | node_reference | `(0,0.5,0)` | `#008000` |
+| doc_comment | `(0.15,0.15,0.4,0.7)` | `#262666b3` | node_path | `(0.18,0.55,0)` | `#2e8c00` |
+
+> The shipped light themes derive **mono/white-alpha** colors by simple inversion
+> (`#ffffffXX` → `#000000XX`), so e.g. the editor `comment` renders as `#00000080` — visually
+> identical to Godot's exact light `comment` `#14141480`. Non-Godot author scopes (prose markdown,
+> macros) are darkened to remain legible on the light background.
+
 ### **Godot 2** theme syntax (reference)
 Godot defines a separate code palette for "Godot 2" (`get_godot2_text_editor_theme`).
 **`godot-2.json` does NOT currently use it** (it inherits Default's). Reference hex in case it is
@@ -99,75 +129,100 @@ Derived colors (dark theme, `contrast = 0.3`, `mono = white`):
 | Godot color | Formula | VS Code key(s) |
 |---|---|---|
 | `base_color` | (input) | opaque `sideBar/statusBar/panel.* background` = base, `badge`, `tab.activeBackground`, widgets |
-| editor background | `base.lerp(black, 0.36)` (`contrast·1.2`) | `editor.background`, `terminal.background`, `panel.background`, `peekViewEditor.background` |
-| `font_color` | `white · 0.75` = `#ffffffbf` | `editor.foreground`, `foreground`, and every text `*.foreground` |
+| editor background | `base.lerp(black, contrast·1.2)` dark · `contrast·1.8` light | `editor.background`, `terminal.background`, `panel.background`, `peekViewEditor.background` |
+| `font_color` | `mono_font · 0.75` — dark `#ffffffbf`, light `#000000bf` | `editor.foreground`, `foreground`, and every text `*.foreground` |
 | `selection_color` | `accent · α0.4` | `editor.selectionBackground`, `selection.background` |
 | `highlight_color` | `accent · α0.275` | `list.activeSelectionBackground`, `list.focusBackground` |
 | accent (opaque) | (input) | `*.activeBorder`, `activityBarBadge`, `statusBar.debuggingBackground`, `pickerGroup`, `inputOption.activeBorder` |
-| `current_line` / word highlight | `white · α0.07` = `#ffffff12` | `editor.lineHighlightBackground`, `editor.wordHighlightBackground`, `editor.hoverHighlightBackground` |
+| `current_line` / word highlight | `mono · α0.07` — dark `#ffffff12`, light `#00000012` | `editor.lineHighlightBackground`, `editor.wordHighlightBackground`, `editor.hoverHighlightBackground` |
 | `dark_color_1` | `base.lerp(black, 0.345)` | (Godot-internal; not mapped 1:1) |
 | `dark_color_3` | `base` with value `·(1−0.24)` | (Godot-internal) |
 | `contrast_color_1` | `base.lerp(white, 0.345)` | light borders |
 | `contrast_color_2` | `base.lerp(white, 0.5175)` | strong light borders |
 | `success` / `warning` / `error` (dark) | `#73f280` / `#d4c79e` / `#ff786b` | `editorError/Warning`, gitDecoration |
 
-### Workbench surfaces that **don't** exist in Godot
-VS Code has more surfaces (activityBar, titleBar, scrollbar, tabs, dropdowns…) that Godot does not
-theme separately. The family generates them as `base · factor` (lerp toward black). Factors used
-(measured against Default's neutral `base` = `#292929`):
+### Workbench surfaces — Godot's HSV elevation (`_get_base_color`)
 
-| Shade | factor ×base | Default | usage |
+VS Code has more surfaces (activityBar, titleBar, scrollbar, tabs, dropdowns…) than Godot themes
+*by name*, but they are **not** arbitrary: they reproduce Godot's surface-elevation helper
+`_get_base_color(base, dim_ofs, sat_mult)` (`theme_modern.cpp:45`):
+
+```
+final_contrast = (dim_ofs < 0) ? clamp(contrast, -0.1, 0.5) : contrast
+v' = clamp( lerp(base.value, 0, final_contrast · dim_ofs), 0, 1 )   // HSV value
+s' = base.saturation · sat_mult
+surface = hsv(base.hue, s', v')
+```
+
+This is HSV (it scales **value** and **saturation**), which is why it preserves hue on tinted bases
+and **auto-inverts on light themes** (negative contrast lerps *away* from black → recessed surfaces
+lighten toward white). The shade groups map to these `(dim_ofs, sat_mult)` pairs — verified to
+reproduce the neutral **Default** theme exactly:
+
+| Shade | `(dim, sat)` | Default | usage |
 |---|---|---|---|
-| darkest | ×0.488 | `#141414` | scrollbar.shadow, activityBar/titleBar/dropdown bg, tab.border/inactive, panel.border |
-| editor | ×0.634 | `#1a1a1a` | editor/terminal/panel background |
-| input | ×0.683 | `#1c1c1c` | input.background |
-| border | ×0.756 | `#1f1f1f` | input.border, editorGroup.border, peekViewTitle, settings borders |
-| **base** | ×1.000 | `#292929` | sideBar/statusBar/widgets |
-| section | ×1.390 | `#393939` | sideBarSectionHeader.background |
-| button | ×1.610 | `#424242` | button.background |
-| findRange | ×2.073 | `#555555` | editor.findRangeHighlightBackground |
+| darkest | `(1.7, 0.9)` | `#141414` | scrollbar.shadow, activityBar/titleBar/commandCenter/dropdown bg, tab.border/inactive, panel.border |
+| input | `(1.1, 0.9)` | `#1c1c1c` | input.background |
+| border | `(0.8, 1.0)` | `#1f1f1f` | input.border, editorGroup.border, peekViewTitle, settings borders |
+| **base** | `(0, 1.0)` | `#292929` | sideBar/statusBar/widgets |
+| section | `(-1.3, 0.8)` | `#393939` | sideBarSectionHeader.background |
+| button | `(-2.0, 0.85)` | `#424242` | button.background |
 
-> These factors are not Godot colors, but they keep the family consistent. For a new neutral base
-> (e.g. Gray `#3d3d3d` = 61): surface = `round(61 × factor)`.
+> On **neutral** bases (Default, Gray) HSV is identical to the older "× factor" approximation
+> (darkest ≈ ×0.488, input ×0.683, border ×0.756, section ×1.39, button ×1.61), because a grey base
+> has zero saturation. On **tinted** bases the two diverge by ≤7/255; the HSV formula above is the
+> Godot-true one and is what every theme now uses.
+> **`editor.findRangeHighlightBackground`** (Default `#555555`) is the one surface with **no** clean
+> Godot mapping — it is an author pick (~`base·2.07` on neutral bases) kept consistent family-wide,
+> not HSV-derived.
 
 ---
 
 ## 5. Fidelity status (current audit)
 
-- **Syntax:** 1:1 with Godot Default (dark) across all 5 Modern themes (after corrections), and the
-  2 Legacy themes share the identical syntax (see the Legacy bullet) — so all 7 themes match.
-- **Editor (bg, fg, selection, current line, word highlight) and accent:** 1:1 across the 5 Modern themes.
+- **Syntax:** 1:1 with Godot across all 8 Modern themes — the 6 dark themes use the dark palette,
+  the 2 light themes (`Light`, `Solarized (Light)`) use the light palette (§3). The 2 Legacy themes
+  share the dark syntax (see the Legacy bullet) — so all 10 themes match.
+- **Editor (bg, fg, selection, current line, word highlight) and accent:** 1:1 across the 8 Modern themes.
 - **Godot 3 `base_color` aligned to Godot 1:1:** `#363d4a` (`Color(0.21,0.24,0.29)`), which makes
   `editor.background` = `#22272f` (`base·0.64` from float, rounded once). Previously the author used
   `#373d49`/`#23272e`. The three `commandCenter.*Border` keys (top menu bar / project-name pill) also
   held a `#3d3b44` leftover — that is **Godot 2's** `base_color` — and were corrected to Godot 3's
   base `#363d4a` (matching how Default/Gray set the command-center border to their own base).
-- **Godot 3 darkest workbench group aligned to `base·0.488`:** `#1a1e24` (titleBar, activityBar,
-  dropdown, scrollbar.shadow, tabs, panel.border…). The previous hand-set `#1c1f24` raised R/G while
-  keeping B, compressing the blue tint so the title bar looked grayer than the rest of the palette.
-- **Godot 3 `sideBarSectionHeader.background` aligned to `base·1.390`:** `#4b5567` (the Explorer
-  section header where the project/workspace name shows). The previous `#525966` had the same
-  grayness issue (R/G raised vs B). `sideBar.border` `#1a1e24` (=`base·0.488`) and the header text
-  (inherits `sideBar.foreground` `#ffffffbf` = font_color) were already correct.
+- **Godot 3 darkest workbench group** (titleBar, activityBar, commandCenter, dropdown,
+  scrollbar.shadow, tabs, panel.border…): the previous hand-set `#1c1f24` raised R/G while keeping B,
+  compressing the blue tint so the title bar looked grayer than the palette. Now `#1b1f24`
+  (HSV-exact, see below).
+- **Godot 3 `sideBarSectionHeader.background`** (the Explorer section header where the
+  project/workspace name shows): the previous `#525966` had the same grayness issue. Now `#505967`
+  (HSV-exact). The header text inherits `sideBar.foreground` `#ffffffbf` = font_color (already correct).
 - **Breeze & Godot 2 `base_color` aligned to Godot 1:1:** Breeze `#202326` (`Color(0.1255,0.1373,0.149)`,
   was `#212326`); Godot 2 `#3d3b45` (`Color(0.24,0.23,0.27)`, was `#3d3b44`). Their `editor.background`
   (float `base·0.64`) was already exact.
-- **All workbench surface groups regenerated from the exact `base`** for the 3 tinted themes (Breeze,
-  Godot 2, Godot 3) using the canonical factor model that Default/Gray follow exactly (section 4):
-  darkest `×0.488`, input.bg `×0.683`, input.border `×0.756`, section `×1.39`, button `×1.61`,
-  findRange `×2.073`. Several were previously hand-set and ran grayer than the model (e.g. Breeze
-  `findRange` `#4e5052` → `#42494f`; Godot 2 `findRange` `#706e78` → `#7e7a8f`). These surfaces have
-  **no direct Godot equivalent** (VS Code-only: titleBar, activityBar, tabs, scrollbar, buttons,
-  inputs, findRange…); "1:1" here means derived consistently from the Godot-exact `base`, identical
-  to how the neutral Default/Gray themes derive theirs.
-- **Out of model (author choices, no neutral reference):** a few tinted one-off surfaces exist only in
-  the tinted themes and cannot be derived from a factor measured on a neutral base — e.g.
-  `editorIndentGuide.background*` (`#3B4352`), `editor.selectionHighlightBackground` (`#424450`).
-  Left as authored.
-- **Top bar logic (consistent across all 5 Modern themes):** `titleBar.*Background` and
-  `commandCenter.background` belong to the `darkest` group (`base·0.488`), one step darker than
-  `editor.background` (`base·0.634`). This is uniform family-wide; on near-black bases (Default) the
-  step is imperceptible, on brighter/tinted bases (Godot 3) it is visible, but the rule is the same.
+- **Workbench surface groups corrected to Godot's HSV `_get_base_color` (§4)** for the 3 tinted
+  themes (Breeze, Godot 2, Godot 3). They had been regenerated with an integer "× factor"
+  approximation; on saturated bases that diverged from Godot's true HSV elevation by ≤7/255 (e.g.
+  Godot 3 section `#4b5567` → `#505967`, button `#576277` → `#5b6576`, darkest `#1a1e24` → `#1b1f24`).
+  The five HSV-genuine groups (darkest, input, border, section, button) are now HSV-exact; neutral
+  Default/Gray were already exact (a grey base has zero saturation, so factor ≡ HSV).
+  `editor.findRangeHighlightBackground` stays the lone author pick (§4 note).
+- **Out of model (author choices, no Godot reference):** a few tinted one-off surfaces exist only in
+  the tinted themes — e.g. `editorIndentGuide.background*` (`#3B4352`),
+  `editor.selectionHighlightBackground` (`#424450`). Left as authored on the existing themes; the new
+  themes (below) derive their equivalents from the HSV surfaces.
+- **Top bar logic (consistent across all Modern dark themes):** `titleBar.*Background` and
+  `commandCenter.background` belong to the `darkest` HSV group, one step darker than
+  `editor.background`. Uniform family-wide; on near-black bases (Default) the step is imperceptible,
+  on tinted bases (Godot 3) it is visible, but the rule is the same.
+- **New Modern themes — derived 1:1 from Godot (`gen_themes.py` workflow):**
+  `Light` (`#e6e6e6`/`#2e80ff`), `Solarized (Dark)` (`#083642`/`#268cd1`, contrast 0.23) and
+  `Solarized (Light)` (`#e3dbc9`/`#268cd1`) were generated from the **Default** template by
+  substituting each color by role (base, editor-bg, accent, selection/highlight, mono whites, the
+  HSV surfaces, and the syntax palette). Solarized (Dark) reuses the dark syntax palette;
+  the two **light** themes (`uiTheme: "vs"`) use the **light syntax branch** (§3), `font_color`
+  `#000000bf`, mono-inverted whites, and the auto-inverted HSV elevation (recessed surfaces lighten
+  toward white; `editor.background` = `base.lerp(black, contrast·1.8)` ≈ near-white). All three pass
+  the editor/selection/syntax 1:1 checks; visual QA on the light themes still pending.
 - **Legacy themes — syntax validated 1:1, UI intentionally unchanged:**
   `legacy-godot-theme-vscode.json` and `legacy-godot-theme-vscode-breeze-dark.json` share their presets
   with Modern **Godot 3** and **Breeze Dark** respectively. Their **syntax is byte-identical to the
@@ -175,7 +230,8 @@ theme separately. The family generates them as `base · factor` (lerp toward bla
   and therefore 1:1 with Godot: **105 / 121** colored entries match the exact Godot dark palette
   (section 3, `Math::round` half-away-from-zero); the remaining 5 are author colors for languages Godot
   does not highlight — Markdown/prose (`#f9eca8`, `#e9f284`), separators (`#79edff`), property quotes
-  (`#8be9fe`) and macros/preprocessor (`#ad75c4`) — and are consistent across all 7 themes.
+  (`#8be9fe`) and macros/preprocessor (`#ad75c4`) — and are consistent across the dark themes
+  (the 2 light themes darken these author scopes for legibility).
   `editor.foreground` (`#ffffffbf`) and `editor.lineHighlightBackground` (`#ffffff12`) also match.
   Their **UI surfaces deliberately preserve the older Godot 3.x-era layout** (the editor area is the
   darkest, panels step *up* in lightness) and are **not** regenerated to the Modern factor model:
@@ -189,13 +245,22 @@ theme separately. The family generates them as `base · factor` (lerp toward bla
 
 ## 6. Recipe for creating a new theme
 
-1. Take the preset's `base_color` and `accent_color` from step 2 (or define your own).
-2. **If the accent matches an existing theme** (like Gray↔Godot 3): copy that `.json` and only
-   recompute the `base·factor` surfaces (section 4) for the new base. That is how `gray` was made:
-   starting from `godot-theme-vscode-godot-3.json` and neutralizing the surfaces.
-3. **If the accent is new:** also replace the accent-derived values:
-   `selection = accent·α0.4` (`…66`), `highlight = accent·α0.275` (`…46`), and the opaque accent on borders/badges.
-4. Keep the syntax (`tokenColors`/`semanticTokenColors`) identical unless you want the Godot 2 palette.
-5. Register the theme in [package.json](package.json) → `contributes.themes` (`label`, `uiTheme: vs-dark`, `path`).
-6. Update the non-standard `"godot-theme-vscode"` block at the top of the `.json` so the palette stays self-documenting.
-7. Visual QA: activate the theme and reload [tests/test.gd](tests/test.gd) and [tests/test.cs](tests/test.cs).
+The reliable way (used for `Light` / `Solarized (Dark)` / `Solarized (Light)`): take the **Default**
+template and substitute every color **by role** in a single pass. Steps:
+
+1. Pick the preset's `base_color`, `accent_color`, `contrast` from §2 (or define your own). Decide
+   polarity: **dark** if `base` luminance < 0.5, else **light**.
+2. **Surfaces:** recompute each shade group with Godot's HSV `_get_base_color(base, dim, sat)` (§4).
+   This works for any base and auto-inverts for light themes — no separate light logic needed.
+   `editor.background = base.lerp(black, contrast · (dark ? 1.2 : 1.8))`.
+3. **Accent-derived:** `selection = accent·α0.4` (`…66`), `highlight = accent·α0.275` (`…46`), and the
+   opaque accent on borders/badges/active states.
+4. **Mono/text:** dark → keep white-alpha (`font_color #ffffffbf`); **light → invert** every
+   `#ffffffXX` to `#000000XX` (`font_color #000000bf`).
+5. **Syntax:** dark themes keep the Default dark palette; **light themes swap in the light palette**
+   (§3). (Use the Godot 2 palette only if you specifically want it.)
+6. Register in [package.json](package.json) → `contributes.themes` with the correct `uiTheme`:
+   **`"vs-dark"` for dark, `"vs"` for light**, plus `label` and `path`.
+7. Update the non-standard `"godot-theme-vscode"` block at the top of the `.json` (it uses the same
+   hexes, so a by-value substitution updates it automatically) so the palette stays self-documenting.
+8. Visual QA: activate the theme and reload [tests/test.gd](tests/test.gd) and [tests/test.cs](tests/test.cs).
