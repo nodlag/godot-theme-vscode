@@ -134,7 +134,8 @@ theme separately. The family generates them as `base · factor` (lerp toward bla
 
 ## 5. Fidelity status (current audit)
 
-- **Syntax:** 1:1 with Godot Default (dark) across all Modern themes (after corrections).
+- **Syntax:** 1:1 with Godot Default (dark) across all 5 Modern themes (after corrections), and the
+  2 Legacy themes share the identical syntax (see the Legacy bullet) — so all 7 themes match.
 - **Editor (bg, fg, selection, current line, word highlight) and accent:** 1:1 across the 5 Modern themes.
 - **Godot 3 `base_color` aligned to Godot 1:1:** `#363d4a` (`Color(0.21,0.24,0.29)`), which makes
   `editor.background` = `#22272f` (`base·0.64` from float, rounded once). Previously the author used
@@ -163,8 +164,26 @@ theme separately. The family generates them as `base · factor` (lerp toward bla
   the tinted themes and cannot be derived from a factor measured on a neutral base — e.g.
   `editorIndentGuide.background*` (`#3B4352`), `editor.selectionHighlightBackground` (`#424450`).
   Left as authored.
-- **Legacy themes:** their own older design; the same syntax and selection/foreground corrections were
-  applied, but their surface palette does not follow the Modern presets.
+- **Top bar logic (consistent across all 5 Modern themes):** `titleBar.*Background` and
+  `commandCenter.background` belong to the `darkest` group (`base·0.488`), one step darker than
+  `editor.background` (`base·0.634`). This is uniform family-wide; on near-black bases (Default) the
+  step is imperceptible, on brighter/tinted bases (Godot 3) it is visible, but the rule is the same.
+- **Legacy themes — syntax validated 1:1, UI intentionally unchanged:**
+  `legacy-godot-theme-vscode.json` and `legacy-godot-theme-vscode-breeze-dark.json` share their presets
+  with Modern **Godot 3** and **Breeze Dark** respectively. Their **syntax is byte-identical to the
+  Modern themes** — 0 differences in `tokenColors` (93 entries) and `semanticTokenColors` (28 entries) —
+  and therefore 1:1 with Godot: **105 / 121** colored entries match the exact Godot dark palette
+  (section 3, `Math::round` half-away-from-zero); the remaining 5 are author colors for languages Godot
+  does not highlight — Markdown/prose (`#f9eca8`, `#e9f284`), separators (`#79edff`), property quotes
+  (`#8be9fe`) and macros/preprocessor (`#ad75c4`) — and are consistent across all 7 themes.
+  `editor.foreground` (`#ffffffbf`) and `editor.lineHighlightBackground` (`#ffffff12`) also match.
+  Their **UI surfaces deliberately preserve the older Godot 3.x-era layout** (the editor area is the
+  darkest, panels step *up* in lightness) and are **not** regenerated to the Modern factor model:
+  because the Legacy themes share presets with Modern, applying the current `godot-master` (Godot 4.x)
+  formulas would make them byte-for-byte duplicates of Modern Godot 3 / Breeze Dark. Known surface
+  deviations, left as authored by design (not bugs): Legacy G3 `editor.selectionBackground` =
+  `#569eff66` (Default's accent rather than Godot 3's `#70bafa66`), and `editor.background`
+  (`#16191f` / Breeze `#161718`) does not follow the float formula.
 
 ---
 
