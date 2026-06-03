@@ -5,6 +5,7 @@
 - More accuracy to original colors.
 - 4 new themes: Gray, Light, Solarized (Dark), Solarized (Light).
 - Removed legacy themes.
+- Changed theme names.
 
 ## 1.1.9
 
