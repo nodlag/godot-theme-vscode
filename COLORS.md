@@ -136,9 +136,33 @@ theme separately. The family generates them as `base · factor` (lerp toward bla
 
 - **Syntax:** 1:1 with Godot Default (dark) across all Modern themes (after corrections).
 - **Editor (bg, fg, selection, current line, word highlight) and accent:** 1:1 across the 5 Modern themes.
-- **Residual ≤1/255 differences** (author's manual rounding of `base_color`, imperceptible):
-  Breeze `#212326` vs Godot `#202326`; Godot 2 `#3d3b44` vs `#3d3b45`; Godot 3 `#373d49` vs `#363d4a`.
-- **Dark workbench surfaces:** `base · factor` (section 4), no direct Godot equivalent.
+- **Godot 3 `base_color` aligned to Godot 1:1:** `#363d4a` (`Color(0.21,0.24,0.29)`), which makes
+  `editor.background` = `#22272f` (`base·0.64` from float, rounded once). Previously the author used
+  `#373d49`/`#23272e`. The three `commandCenter.*Border` keys (top menu bar / project-name pill) also
+  held a `#3d3b44` leftover — that is **Godot 2's** `base_color` — and were corrected to Godot 3's
+  base `#363d4a` (matching how Default/Gray set the command-center border to their own base).
+- **Godot 3 darkest workbench group aligned to `base·0.488`:** `#1a1e24` (titleBar, activityBar,
+  dropdown, scrollbar.shadow, tabs, panel.border…). The previous hand-set `#1c1f24` raised R/G while
+  keeping B, compressing the blue tint so the title bar looked grayer than the rest of the palette.
+- **Godot 3 `sideBarSectionHeader.background` aligned to `base·1.390`:** `#4b5567` (the Explorer
+  section header where the project/workspace name shows). The previous `#525966` had the same
+  grayness issue (R/G raised vs B). `sideBar.border` `#1a1e24` (=`base·0.488`) and the header text
+  (inherits `sideBar.foreground` `#ffffffbf` = font_color) were already correct.
+- **Breeze & Godot 2 `base_color` aligned to Godot 1:1:** Breeze `#202326` (`Color(0.1255,0.1373,0.149)`,
+  was `#212326`); Godot 2 `#3d3b45` (`Color(0.24,0.23,0.27)`, was `#3d3b44`). Their `editor.background`
+  (float `base·0.64`) was already exact.
+- **All workbench surface groups regenerated from the exact `base`** for the 3 tinted themes (Breeze,
+  Godot 2, Godot 3) using the canonical factor model that Default/Gray follow exactly (section 4):
+  darkest `×0.488`, input.bg `×0.683`, input.border `×0.756`, section `×1.39`, button `×1.61`,
+  findRange `×2.073`. Several were previously hand-set and ran grayer than the model (e.g. Breeze
+  `findRange` `#4e5052` → `#42494f`; Godot 2 `findRange` `#706e78` → `#7e7a8f`). These surfaces have
+  **no direct Godot equivalent** (VS Code-only: titleBar, activityBar, tabs, scrollbar, buttons,
+  inputs, findRange…); "1:1" here means derived consistently from the Godot-exact `base`, identical
+  to how the neutral Default/Gray themes derive theirs.
+- **Out of model (author choices, no neutral reference):** a few tinted one-off surfaces exist only in
+  the tinted themes and cannot be derived from a factor measured on a neutral base — e.g.
+  `editorIndentGuide.background*` (`#3B4352`), `editor.selectionHighlightBackground` (`#424450`).
+  Left as authored.
 - **Legacy themes:** their own older design; the same syntax and selection/foreground corrections were
   applied, but their surface palette does not follow the Modern presets.
 
